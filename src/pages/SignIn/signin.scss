@@ -1,0 +1,34 @@
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: var(--caption);
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: .4rem;
+  height: 4rem;
+  width: 42rem;
+
+  color: white;
+  background: none;
+  font-size: 1.2rem;
+  border-image: linear-gradient(to right, var(--primary), var(--gray)) 1;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: var(--background-light);
+  }
+}
+
